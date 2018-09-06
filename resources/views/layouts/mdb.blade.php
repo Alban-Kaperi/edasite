@@ -30,7 +30,7 @@
 		<!--Mask-->
 		<div id="intro" class="view">
 
-		    <div class="mask rgba-black-strong">
+		    <div class="mask rgba-black-light">
 
 		        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
 

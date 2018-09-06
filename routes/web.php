@@ -20,6 +20,9 @@ Route::get('/', 'Checkout@gettoken')->name('get.mainpage');
 Route::post('/payment', 'Checkout@payment')->name('make.payment');
 Route::get('/products', 'ProductsController@getproducts')->name('products');
 
+Route::get('/product/{productID}', 'ProductsController@getproduct')->name('product');
+
+
 Route::get('/test', function(){
 	return view('test');
 });

@@ -10,8 +10,8 @@ class Product extends Model
     {
         return $this->hasMany('App\Orderdetail');
     }
-    public function category()
-	  {
-	    return $this->belongsTo('App\Category');
-	  }
+    public function productcollection()
+	{
+	    return $this->belongsTo('App\ProductCollection');
+	}
 }

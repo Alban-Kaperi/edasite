@@ -14,8 +14,6 @@
 </div>
 </div>
 
-
-
         <div class="row justify-content-center">
         @foreach($products as $product)
             <div class="col-md-3"  style="padding-bottom:30px;">
@@ -25,7 +23,7 @@
                   <!-- Card image -->
                   <div class="view overlay">
                     <img class="card-img-top" src="{{$product->imagePath}}" alt="Card image cap">
-                    <a href="#!">
+                    <a href="{{route('product', ['productID' => $product['id']])}}">
                       <div class="mask rgba-white-slight"></div>
                     </a>
                   </div>
@@ -34,7 +32,9 @@
                     <div class="card-body">
 
                     <!-- Title -->
-                    <h5 class="card-title">{{$product->title}}</h5>
+                    <a href="{{route('product', ['productID' => $product['id']])}}">
+                        <h5 class="card-title">{{$product->title}}</h5>
+                    </a>
                     <!-- Text -->
                     <!-- <p class="card-text"></p> -->
                     <!-- Button -->

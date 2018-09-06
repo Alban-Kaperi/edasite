@@ -26,7 +26,7 @@ class Checkout extends Controller
         $clientToken = $gateway->clientToken()->generate();
 
 
-        return view('welcome', compact(['clientToken']));
+        return view('checkout', compact(['clientToken']));
     }
     public function payment(Request $request)
     {
