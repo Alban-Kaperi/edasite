@@ -13,13 +13,14 @@
   <div class="row justify-content-center">
     
       @for ($i =1; $i <= 4; $i++)
-      <div class="col-sm-2">
+      <div class="col-3">
         <img class="img-fluid img-thumbnail" src="{{ $product->imagePath }}" alt="{{$product->title}}">
       </div>
       @endfor  
     
   </div>
 </div>
+  <br><br>
 <div class="col-sm-6">
 <table class="table">
 
